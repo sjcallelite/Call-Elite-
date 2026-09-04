@@ -1,6 +1,4 @@
-from pathlib import Path
-
-css = r'''/* ============================================================
+/* ============================================================
    RC CALL ELITE — PREMIUM VISUAL DESIGN
    CSS ONLY — existing HTML/content/functionality preserved
    No external fonts, libraries, images, URLs or scripts.
@@ -1498,9 +1496,3 @@ textarea:focus-visible {
         gap: 10px 15px;
     }
 }
-'''
-
-out = Path("/mnt/data/style.css")
-out.write_text(css, encoding="utf-8")
-print(f"Created {out}")
-print(f"CSS lines: {len(css.splitlines())}")
