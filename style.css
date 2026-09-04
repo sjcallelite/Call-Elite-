@@ -5,23 +5,23 @@
    ============================================================ */
 
 :root {
-    --bg-primary: #090a0c;
-    --bg-secondary: #0f1114;
-    --bg-tertiary: #15181c;
+    --bg-primary: #080808;
+    --bg-secondary: #111111;
+    --bg-tertiary: #171717;
     --surface: rgba(255,255,255,.045);
     --surface-strong: rgba(255,255,255,.07);
-    --surface-solid: #121519;
+    --surface-solid: #171717;
 
-    --text-primary: #f7f7f5;
-    --text-secondary: #c4c7ca;
-    --text-muted: #858b92;
+    --text-primary: #FFFFFF;
+    --text-secondary: #C7C7C7;
+    --text-muted: #888888;
 
     --border: rgba(255,255,255,.10);
     --border-strong: rgba(255,255,255,.17);
 
-    --gold: #c9a45c;
-    --gold-light: #e3c27d;
-    --gold-soft: rgba(201,164,92,.15);
+    --gold: #C9A227;
+    --gold-light: #E5C45A;
+    --gold-soft: rgba(201,162,39,0.15);
 
     --white: #ffffff;
     --black: #000000;
@@ -98,11 +98,11 @@ button {
 }
 
 ::-webkit-scrollbar-track {
-    background: #08090b;
+    background: #080808;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #34383d;
+    background: #888888;
     border-radius: 999px;
 }
 
@@ -179,9 +179,9 @@ button {
 .cursor-glow {
     width: 42px;
     height: 42px;
-    border: 1px solid rgba(201,164,92,.55);
+    border: 1px solid rgba(201,162,39,0.35);
     border-radius: 50%;
-    box-shadow: 0 0 30px rgba(201,164,92,.12);
+    box-shadow: 0 0 30px rgba(201,162,39,0.12);
     transition: opacity .2s ease, width .2s ease, height .2s ease;
 }
 
@@ -209,7 +209,7 @@ button {
 #mainNav {
     min-height: 78px;
     padding: 10px 0;
-    background: rgba(9,10,12,.72);
+    background: rgba(8,8,8,0.72);
     border-bottom: 1px solid transparent;
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
@@ -219,7 +219,7 @@ button {
 
 #mainNav.scrolled {
     min-height: 68px;
-    background: rgba(9,10,12,.94);
+    background: rgba(8,8,8,0.94);
     border-bottom-color: var(--border);
     box-shadow: 0 12px 40px rgba(0,0,0,.24);
 }
@@ -319,16 +319,16 @@ button {
 }
 
 .btn-glow {
-    color: #111 !important;
+    color: #111111 !important;
     background: linear-gradient(135deg, var(--gold-light), var(--gold));
     border: 1px solid var(--gold-light);
-    box-shadow: 0 10px 28px rgba(201,164,92,.18);
+    box-shadow: 0 10px 28px rgba(201,162,39,0.18);
 }
 
 .btn-glow:hover {
-    color: #090909 !important;
+    color: #080808 !important;
     transform: translateY(-2px);
-    box-shadow: 0 16px 38px rgba(201,164,92,.27);
+    box-shadow: 0 16px 38px rgba(201,162,39,0.27);
 }
 
 .btn-outline-glow {
@@ -339,7 +339,7 @@ button {
 
 .btn-outline-glow:hover {
     color: var(--gold-light) !important;
-    border-color: rgba(201,164,92,.6);
+    border-color: rgba(201,162,39,0.35);
     background: var(--gold-soft);
     transform: translateY(-2px);
 }
@@ -362,7 +362,7 @@ button {
     overflow: hidden;
     padding: 150px 0 110px;
     background:
-        radial-gradient(circle at 76% 24%, rgba(201,164,92,.12), transparent 30%),
+        radial-gradient(circle at 76% 24%, rgba(201,162,39,0.12), transparent 30%),
         radial-gradient(circle at 15% 65%, rgba(255,255,255,.035), transparent 27%),
         var(--bg-primary);
 }
@@ -385,8 +385,8 @@ button {
     inset: 0;
     z-index: -3;
     background:
-        radial-gradient(circle at 80% 55%, rgba(201,164,92,.07), transparent 28%),
-        linear-gradient(180deg, rgba(9,10,12,0), rgba(9,10,12,.55));
+        radial-gradient(circle at 80% 55%, rgba(201,162,39,0.07), transparent 28%),
+        linear-gradient(180deg, rgba(8,8,8,0), rgba(8,8,8,0.55));
 }
 
 .hero .container {
@@ -416,10 +416,10 @@ button {
     align-items: center;
     gap: 8px;
     padding: 8px 13px;
-    border: 1px solid rgba(201,164,92,.28);
+    border: 1px solid rgba(201,162,39,0.35);
     border-radius: 999px;
     color: var(--gold-light);
-    background: rgba(201,164,92,.07);
+    background: rgba(201,162,39,0.07);
     font-size: .72rem;
     font-weight: 700;
     letter-spacing: .12em;
@@ -431,12 +431,12 @@ button {
     flex: 0 0 auto;
     border-radius: 50%;
     background: var(--gold-light);
-    box-shadow: 0 0 0 5px rgba(201,164,92,.08);
+    box-shadow: 0 0 0 5px rgba(201,162,39,0.08);
     animation: pulseDot 1.8s ease-in-out infinite;
 }
 
 @keyframes pulseDot {
-    50% { box-shadow: 0 0 0 8px rgba(201,164,92,0); }
+    50% { box-shadow: 0 0 0 8px rgba(201,162,39,0); }
 }
 
 .gradient-text,
@@ -449,7 +449,7 @@ button {
 }
 
 .gradient-text-pink {
-    background: linear-gradient(90deg, #e7d6ad, #fff);
+    background: linear-gradient(90deg, #E5C45A, #fff);
 }
 
 .highlight {
@@ -482,7 +482,7 @@ button {
 .float-shape {
     position: absolute;
     pointer-events: none;
-    border: 1px solid rgba(201,164,92,.13);
+    border: 1px solid rgba(201,162,39,0.35);
     border-radius: 50%;
     filter: blur(.2px);
 }
@@ -573,7 +573,7 @@ section {
 
 .quote-section {
     background:
-        linear-gradient(180deg, var(--bg-primary), #0c0e10 50%, var(--bg-primary));
+        linear-gradient(180deg, var(--bg-primary), #111111 50%, var(--bg-primary));
 }
 
 .quote-form {
@@ -612,18 +612,18 @@ section {
 }
 
 .form-control::placeholder {
-    color: #6f757c;
+    color: #888888;
 }
 
 .form-control:focus,
 .form-select:focus {
-    border-color: rgba(201,164,92,.65) !important;
+    border-color: rgba(201,162,39,0.65) !important;
     background-color: rgba(255,255,255,.065) !important;
-    box-shadow: 0 0 0 3px rgba(201,164,92,.09) !important;
+    box-shadow: 0 0 0 3px rgba(201,162,39,0.09) !important;
 }
 
 .form-select option {
-    color: #111;
+    color: #111111;
     background: #fff;
 }
 
@@ -660,8 +660,8 @@ textarea.form-control {
 
 .feature-item:hover {
     transform: translateY(-3px);
-    border-color: rgba(201,164,92,.35);
-    background: rgba(201,164,92,.045);
+    border-color: rgba(201,162,39,0.35);
+    background: rgba(201,162,39,0.045);
 }
 
 .feature-item i {
@@ -672,7 +672,7 @@ textarea.form-control {
 
 #about {
     background:
-        radial-gradient(circle at 82% 40%, rgba(201,164,92,.055), transparent 28%),
+        radial-gradient(circle at 82% 40%, rgba(201,162,39,0.055), transparent 28%),
         var(--bg-secondary) !important;
 }
 
@@ -747,8 +747,8 @@ textarea.form-control {
 
 .service-card:hover {
     transform: translateY(-6px);
-    border-color: rgba(201,164,92,.38);
-    background: linear-gradient(145deg, rgba(201,164,92,.08), rgba(255,255,255,.025));
+    border-color: rgba(201,162,39,0.35);
+    background: linear-gradient(145deg, rgba(201,162,39,0.08), rgba(255,255,255,.025));
     box-shadow: 0 20px 45px rgba(0,0,0,.25);
 }
 
@@ -760,7 +760,7 @@ textarea.form-control {
     margin-bottom: 18px;
     color: var(--gold-light);
     background: var(--gold-soft);
-    border: 1px solid rgba(201,164,92,.20);
+    border: 1px solid rgba(201,162,39,0.35);
     border-radius: 13px;
     font-size: 1.05rem;
 }
@@ -798,8 +798,8 @@ textarea.form-control {
 
 .step-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(201,164,92,.35);
-    background: rgba(201,164,92,.045);
+    border-color: rgba(201,162,39,0.35);
+    background: rgba(201,162,39,0.045);
 }
 
 .step-num {
@@ -808,7 +808,7 @@ textarea.form-control {
     display: grid;
     place-items: center;
     margin-bottom: 20px;
-    color: #111;
+    color: #111111;
     background: var(--gold-light);
     border-radius: 12px;
     font-weight: 800;
@@ -829,7 +829,7 @@ textarea.form-control {
 .project-card {
     height: 100%;
     overflow: hidden;
-    background: #101216;
+    background: #171717;
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
@@ -839,7 +839,7 @@ textarea.form-control {
 
 .project-card:hover {
     transform: translateY(-6px);
-    border-color: rgba(201,164,92,.35);
+    border-color: rgba(201,162,39,0.35);
     box-shadow: var(--shadow-md);
 }
 
@@ -911,7 +911,7 @@ textarea.form-control {
     place-items: center;
     overflow: hidden;
     border-radius: 50%;
-    background: #22262b;
+    background: #171717;
     border: 1px solid var(--border-strong);
 }
 
@@ -951,7 +951,7 @@ textarea.form-control {
 }
 
 .swiper-pagination-bullet {
-    background: #777 !important;
+    background: #888888 !important;
     opacity: .65;
 }
 
@@ -964,7 +964,7 @@ textarea.form-control {
 
 #contact {
     background:
-        radial-gradient(circle at 18% 25%, rgba(201,164,92,.07), transparent 27%),
+        radial-gradient(circle at 18% 25%, rgba(201,162,39,0.07), transparent 27%),
         var(--bg-primary);
 }
 
@@ -972,7 +972,7 @@ textarea.form-control {
     overflow: hidden;
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
-    background: #111;
+    background: #111111;
     box-shadow: var(--shadow-md);
 }
 
@@ -987,7 +987,7 @@ textarea.form-control {
 .footer {
     position: relative;
     padding: 70px 0 24px;
-    background: #07080a;
+    background: #080808;
     border-top: 1px solid var(--border);
 }
 
@@ -1062,7 +1062,7 @@ textarea.form-control {
 }
 
 .socials a:hover {
-    color: #111;
+    color: #111111;
     background: var(--gold-light);
     border-color: var(--gold-light);
     transform: translateY(-2px);
@@ -1105,7 +1105,7 @@ textarea.form-control {
     display: grid;
     place-items: center;
     color: var(--text-primary);
-    background: #111419;
+    background: #171717;
     border: 1px solid var(--border-strong);
     border-radius: 50%;
     box-shadow: var(--shadow-md);
@@ -1114,7 +1114,7 @@ textarea.form-control {
 }
 
 .whatsapp-float-btn:hover {
-    color: #111;
+    color: #111111;
     background: var(--gold-light);
     border-color: var(--gold-light);
     transform: translateY(-3px);
@@ -1150,7 +1150,7 @@ textarea.form-control {
     width: min(900px, 100%);
     max-height: min(82vh, 760px);
     overflow: hidden;
-    background: #111418;
+    background: #171717;
     border: 1px solid var(--border-strong);
     border-radius: var(--radius-xl);
     box-shadow: 0 40px 120px rgba(0,0,0,.6);
@@ -1199,7 +1199,7 @@ textarea.form-control {
 }
 
 .terms-modal-close:hover {
-    color: #111;
+    color: #111111;
     background: var(--gold-light);
     border-color: var(--gold-light);
 }
@@ -1245,7 +1245,7 @@ textarea.form-control {
     padding: 6px 10px;
     color: var(--gold-light);
     background: var(--gold-soft);
-    border: 1px solid rgba(201,164,92,.18);
+    border: 1px solid rgba(201,162,39,0.35);
     border-radius: 8px;
     font-size: .73rem;
     font-weight: 700;
@@ -1316,13 +1316,13 @@ textarea:focus-visible {
 
 @media (max-width: 991.98px) {
     #mainNav {
-        background: rgba(9,10,12,.96);
+        background: rgba(8,8,8,0.96);
     }
 
     .navbar-collapse {
         margin-top: 12px;
         padding: 10px;
-        background: #101216;
+        background: #171717;
         border: 1px solid var(--border);
         border-radius: 14px;
         box-shadow: var(--shadow-md);
