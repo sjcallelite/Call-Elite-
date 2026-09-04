@@ -354,6 +354,17 @@ const db = getFirestore(app);
 
 
           form.reset();
+          // --------------------------------------------------
+// GOOGLE ADS CONVERSION
+// --------------------------------------------------
+
+if (typeof window.gtag === "function") {
+  window.gtag("event", "conversion", {
+    send_to: "AW-17519260869/JlNnCMzx3pEbEMXp6qFB",
+    value: 1.0,
+    currency: "INR"
+  });
+}
 
 
           // --------------------------------------------------
